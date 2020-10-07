@@ -1,10 +1,86 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/css/styles.css">
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/5752392d99.js"></script>      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css" rel="stylesheet">
+        <link href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Recipies | Simplecook </title>
     </head>
-    <body></body>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Simplecook</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"data-target="#navbar"aria-controls="navbar"aria-expanded="false"aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>   
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="categories.html">Categories</a>   
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>   
+                        </li>
+                    </ul>
+                    <form action="search.html" method="get" class="form-inline my-2 my-lg-2">
+                        <input class="form-control mr-sm-2" type="search"placeholder="Search"aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><div class="recipe-slide-card">
+                            <div class="recipe-slide-card-img" style="background-image:url('./recipe-images/burger.jpg');"></div>
+                            <h3>Recipe name</h3>
+                        </div></li>
+                        <li class="glide__slide"><div class="recipe-slide-card">
+                            <div class="recipe-slide-card-img" style="background-image:url('./recipe-images/burger.jpg');"></div>
+                            <h3>Recipe name</h3>
+                        </div></li>
+                        <li class="glide__slide"><div class="recipe-slide-card">
+                            <div class="recipe-slide-card-img" style="background-image:url('./recipe-images/burger.jpg');"></div>
+                            <h3>Recipe name</h3> 
+                        </div></li>
+                        <li class="glide__slide"><div class="recipe-slide-card">
+                            <div class="recipe-slide-card-img" style="background-image:url('./recipe-images/burger.jpg');"></div>
+                            <h3>Recipe name</h3>
+                        </div></li>
+                        <li class="glide__slide"><div class="recipe-slide-card">
+                            <div class="recipe-slide-card-img" style="background-image:url('./recipe-images/burger.jpg');"></div>
+                            <h3>Recipe name</h3>
+                        </div></li>
+                        <li class="glide__slide"><div class="recipe-slide-card">
+                            <div class="recipe-slide-card-img" style="background-image:url('./recipe-images/burger.jpg');"></div>
+                            <h3>Recipe name</h3>
+                        </div></li>
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left darkBut" data-glide-dir="<">
+                        <i class="fa fa-arrow-circle-left"></i>
+                    </button>
+                    <button class="glide__arrow glide__arrow--right darkBut" data-glide-dir=">">
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script>
+        <script>new Glide('.glide', {type:'carousel',perView:4}).mount()</script>
+    </body>
 </html>
