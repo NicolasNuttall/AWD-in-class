@@ -1,0 +1,27 @@
+//Abstracts
+@import "abstracts/variables";
+//Vendors
+@import "vendors/bootstrap";
+@import "../node_modules/@glidejs/glide/dist/css/glide.theme.min.css";
+
+//Base
+
+//Layout
+@import "layout/header";
+@import "layout/_navigation.scss";
+
+//Components
+@import "components/recipe-slide-card";
+//Pages
+
+//Themes
+@import "themes/theme";
+
+
+
+.darkBut{
+    color: white;
+    
+    background-color: black;
+    border-radius: 50%;
+}
