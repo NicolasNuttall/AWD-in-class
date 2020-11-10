@@ -2,12 +2,14 @@
 <html>
     <head>
         <script src="./js/scripts-vendor.min.js"></script>
+        <script src="./js/scripts.min.js"></script>
+        <script>home.init();</script>
         <script src="https://use.fontawesome.com/5752392d99.js"></script>      
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">           
         <link href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css" rel="stylesheet">
         <link href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/styles.css">
-        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Recipies | Simplecook </title>
@@ -104,21 +106,6 @@
         <footer class="container mt-4 text-center">
             <p>&copy;StudentEat - Created for educational purposes</p>
         </footer>
-        <script>new Glide('.glide', {type:'carousel',
-        perView:4,
-        breakpoints:{
-            1200:{
-                perView:4
-            },
-            992:{
-                perView:3
-            },
-            768:{
-                perView:2
-            },
-            576:{
-                perView:1
-            }
-        }}).mount()</script>
+        
     </body>
 </html>
