@@ -55,8 +55,8 @@ module.exports = function(grunt){
                         "./node_modules/jquery/dist/jquery.min.js",
                         "./node_modules/jquery/dist/jquery.js",
                         "./node_modules/bootstrap/dist/js/bootstrap.min.js",                   
-                        "./node_modules/@glidejs/glide/dist/glide.min.js"
-                        
+                        "./node_modules/@glidejs/glide/dist/glide.min.js",
+                        "./node_modules/lightbox2/dist/js/lightbox.min.js"
                     ],
                 },
             },
