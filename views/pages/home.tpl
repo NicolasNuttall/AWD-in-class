@@ -1,51 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <script src="./js/scripts-vendor.min.js"></script>
-        <script src="./js/scripts.min.js"></script>
-        <script>home.init();</script>
-        <script src="https://use.fontawesome.com/5752392d99.js"></script>      
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">           
-        <link href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css" rel="stylesheet">
-        <link href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400&display=swap" rel="stylesheet">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Recipies | Simplecook </title>
-    </head>
-    <body id="page-home">
-        <header>
-            <div class="page-header-top container text-center text-md-left">
-                <a href="index.html"><img src="./images/logo.jpg" alt="StudentEat"/></a>
-            </div>
-            <nav class="navbar navbar-expand-lg">           
-                <div class="container">                  
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"data-target="#navbar"aria-controls="navbar"aria-expanded="false"aria-label="Toggle navigation">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbar">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>   
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="categories.html">Categories</a>   
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="login-reg.html">Login/Register</a>   
-                            </li>
-                        </ul>
-                        <form action="search.html" method="get" class="form-inline my-2 my-lg-2">
-                            <input class="form-control mr-sm-2" type="search"placeholder="Search"aria-label="Search">
-                            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-                        </form>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <div class="container">
-            <div class="glide">
+{extends file="layouts/main.tpl"}
+{block name="body"}
+<div class="glide">
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
                         <li class="glide__slide"><div class="recipe-slide-card">
@@ -96,16 +51,10 @@
                 <div class="col-lg-9">
                     <p>Never run out of recipe ideas, we are here to provide you with an endless amount of affordable recipes.</p>
                     <p>In a hurry? No need to compromise even if you're pressed for time - we've stacks of delicious recipes that are simple, quick and easy to make.</p>                
-                    <a href="categories.html" class="btn btn-studenteat">Browse recipes</a>
+                    <a href="categories.php" class="btn btn-studenteat">Browse recipes</a>
                 </div>
                 <div class="col-lg-3">
                     <img src="./images/plate.png" alt="Plate of food">
                 </div>
             </div>
-        </div>
-        <footer class="container mt-4 text-center">
-            <p>&copy;StudentEat - Created for educational purposes</p>
-        </footer>
-        
-    </body>
-</html>
+{/block}
