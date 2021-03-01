@@ -32,9 +32,20 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="index.php?p=categories">Categories</a>   
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.php?p=login">Login/Register</a>   
-                            </li>
+                            {if $user_data}
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.php?p=account">Account</a>   
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.php?p=logout">Logout</a>   
+                                </li>
+                            {else}
+                            
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.php?p=login">Login/Register</a>   
+                                </li>
+
+                            {/if}
                         </ul>
                         <form action="search.php" method="get" class="form-inline my-2 my-lg-2">
                             <input class="form-control mr-sm-2" type="search"placeholder="Search"aria-label="Search">

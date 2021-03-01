@@ -14,17 +14,16 @@
 @import "components/recipe-slide-card";
 @import "components/button";
 @import "components/recipe-card";
+@import "components/form";
 //Pages
 @import "pages/login-reg";
 @import "pages/recipe";
 //Themes
 @import "themes/theme";
 
+.darkBut {
+  color: white;
 
-
-.darkBut{
-    color: white;
-    
-    background-color: black;
-    border-radius: 50%;
+  background-color: black;
+  border-radius: 50%;
 }
